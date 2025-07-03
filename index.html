@@ -1021,13 +1021,13 @@
       
 
       document.getElementById('cartTotal').textContent = `$${total.toFixed(2)}`;
-      const cartModal = bootstrap.Modal.getOrCreateInstance(cartModalElement);
-
+      
       
 
       // Show the modal
 
-      const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+      const cartModalElement= new bootstrap.Modal(document.getElementById('cartModal'));
+      const cartModal = bootstrap.Modal.getOrCreateInstance(cartModalElement);
 
       cartModal.show();
 
